@@ -1,0 +1,20 @@
+.tag {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 2px 0px; }
+
+.tag-accent {
+  display: inline-block;
+  background-color: #30343f;
+  color: #f2ece8; }
+
+.tag-secondary {
+  display: inline-block;
+  background-color: #f2ece8;
+  color: #30343f; }
+
+.tag-third {
+  display: inline-block;
+  background-color: #c2c2c2;
+  color: #30343f; }

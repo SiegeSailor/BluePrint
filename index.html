@@ -1,74 +1,151 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A BluePrint for a portofolio website.">
     <title>BluePrint</title>
-    <link rel="shortcut icon" href="https://secure.gravatar.com/avatar/688ab6934b21bca68e0fe4fc54a66805?s=32&d=mm&r=g" type="image/x-icon">
-
+    <link rel="shortcut icon" href="https://secure.gravatar.com/avatar/688ab6934b21bca68e0fe4fc54a66805?s=32&d=mm&r=g"
+        type="image/x-icon">
+    <!-- Import Pure.css with its SideMenu Layout -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-        <!--[if lte IE 8]>
+    <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
         <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/side-menu.css">
-        <!--<![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+    <!-- Import Own CSS -->
+    <link rel="stylesheet" href="css/all.css">
 </head>
+
 <body>
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
 
-    <div id="menu">
-        <div class="pure-menu">
-            <a class="pure-menu-heading" href="index.html">BluePrint</a>
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="index.html">BluePrint</a>
 
-            <!-- Remeber to use these two classes to do parallax scrolling:menu-item-divided pure-menu-selected -->
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#title-brief" class="pure-menu-link">Brief</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-                <li class="pure-menu-item">
-                    <a href="#" class="pure-menu-link">Services</a>
-                </li>
+                <!-- Remeber to use these two classes to do parallax scrolling:menu-item-divided pure-menu-selected -->
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#title-brief" class="pure-menu-link">Brief</a></li>
+                    <li class="pure-menu-item"><a href="#title-lifetiers" class="pure-menu-link">Life Tiers</a></li>
+                    <li class="pure-menu-item">
+                        <a href="#title-skillcategory" class="pure-menu-link">Skill Category</a>
+                    </li>
 
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="main">
-        <div class="header">
-            <h1 id="title-brief">Brief</h1>
-            <h2>How do I promote myself</h2>
-        </div>
-
-        <div class="content">
-            <h2 class="content-subhead">Tiers</h2>
-            <p>
-                To display my experience, I divided my life into 4 different tiers, they have a unique topic for each other,
-                so people can get known about me as fast as they read the title.
-                <ul>
-                    <li>National Formosa University - Broadened my horizon with a plenty experience in <b>Sports teams</b>, <b>Faculty society</b>, <b>Dancing Club</b>, <b>Project groups</b>, and <b>Hobbies</b>.</li>
-                    <li>Servicetech International Inc. - Practiced <b>Branding</b> and <b>Marketing</b> with my <b>Design skill</b> as a <b>Marketing and Design Executive / Manager</b>.</li>
-                    <li>Between Jobs - How I prepared my <b>Resume</b>, <b>Linkedin profile</b>, <b>GitHub</b>, <b>Codepen</b>, <b>Personal Website</b>.</li>
+                    <li class="pure-menu-item"><a href="#title-positionview" class="pure-menu-link">Position View</a></li>
                 </ul>
-            </p>
+            </div>
+        </div>
 
-            <h2 class="content-subhead">Skill Category</h2>
-            <p>
-                List my skills, so that people can see what they are manily looking for.
-            </p>
+        <div id="main">
+            <div id="title-brief" class="content-brief">
+                <div class="header">
+                    <h1>Brief</h1>
+                    <h2>The main structure for the website</h2>
+                </div>
+            </div>
 
-            <h2 class="content-subhead">Browse my webiste as an HR, Front-End Engineer, Designer, Marketing Person, UI/UX Designer.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div class="content">
+                <div id="title-lifetiers" class="content-lifetiers">
+                    <h2 class="content-subhead">Life Tiers</h2>
+                    <p>
+                        To display my experience, I divided my life into 4 different tiers, they have a unique topic
+                        for
+                        each other,
+                        so people can get known about me as fast as they read the title.
+                        <ul>
+                            <li>National Formosa University - Broadened my horizon with a plenty experience in <a href="#">Sports
+                                    Teams</a>, <a href="#">Faculty Society</a>, <a href="#">Dancing Club</a>, <a href="#">Project
+                                    Groups</a>, <a href="#">Hobbies</a>
+                            </li>
+                            <li>Servicetech International Inc. - Practiced <a href="#">Branding</a> and <a href="#">Marketing</a>
+                                with my <a href="#">Design
+                                    skill</a> as a <a href="#">Marketing and Design Executive / Manager</a>.</li>
+                            <li>Between Jobs - How I prepared my <a href="#">Resume</a>, <a href="#">Linkedin
+                                    Profile</a>, <a href="#">GitHub</a>, <a href="#">Codepen</a>, and <a href="#">Personal
+                                    Website</a>.</li>
+                        </ul>
+                    </p>
+                </div>
 
-            <!-- <div class="pure-g">
+                <div id="title-skillcategory" class="content-skillcategory">
+                    <h2 class="content-subhead">Skill Category</h2>
+                    <p>
+                        List my skills, so that people can see what they are manily looking for.
+                        <ul>
+                            <li>
+                                Design
+                            </li>
+                            <ul>
+                                <li>
+                                    Softwares - <a href="#">Adobe Illustrator</a>, <a href="#">Adobe
+                                        Photoshop</a>, <a href="#">Adobe After Effects</a>.
+                                </li>
+                                <li>
+                                    Skills - <a href="#">Graphic Design</a>, <a href="#">Illustration</a>.
+                                </li>
+                            </ul>
+                            <li>
+                                Marketing
+                                <ul>
+                                    <li>Skills - <a href="#">Branding</a>, <a href="#">Marketing</a>, <a href="#">Social
+                                            Media Marketing</a>, <a href="#">
+                                            Digital Marketing</a>, <a href="#">Digital Media</a>, <a href="#">
+                                            Product Analysis</a>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Front-End</li>
+                            <ul>
+                                <li>
+                                    Tools - <a href="#">Git</a>, <a href="#">GitHub</a>.
+                                </li>
+                                <li>
+                                    Editors - <a href="#">Sublime Text 3</a>, <a href="#">Visual Studio Code</a>.
+                                </li>
+                                <li>
+                                    Frameworks - <a href="#">Bootstrap</a>, <a href="#">Pure.css</a>, <a href="#">Animate.css</a>.
+                                </li>
+                                <li>
+                                    Programming Language - <a href="#">JavaScript</a>, <a href="#">jQuery</a>.
+                                </li>
+                                <li>
+                                    Markup Language - <a href="#">HTML5</a>, <a href="#">CSS3</a>, <a href="#">SCSS</a>.
+                                </li>
+                                <li>
+                                    Skills - <a href="#">Responsive Web Design</a>.
+                                </li>
+                            </ul>
+                            <li>
+                                Others - <a href="#">Chinese Literature</a>.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div id="title-positionview" class="content-positionview">
+                    <h2 class="content-subhead">Position View</h2>
+                    <p>
+                        Browse my website as the position you are, so that you can filter what directly relate to.
+                        <ul>
+                            <li><a href="#">Human Resources</a></li>
+                            <li><a href="#">Front-End Engineer</a></li>
+                            <li><a href="#">Designer</a></li>
+                            <li><a href="#">Marketing Person</a></li>
+                            <li><a href="#">UI/UX Designer</a></li>
+                        </ul>
+                    </p>
+                </div>
+
+                <!-- <div class="pure-g">
                 <div class="pure-u-1-4">
                     <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
                 </div>
@@ -82,11 +159,17 @@
                     <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
                 </div>
             </div> -->
+            </div>
         </div>
     </div>
-</div>
 
-<script src="js/ui.js"></script>
+    <!-- Import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Import Pure.css -->
+    <script src="js/ui.js"></script>
+    <!-- Import own Javascript -->
+    <script src="js/all.js"></script>
 
 </body>
+
 </html>
