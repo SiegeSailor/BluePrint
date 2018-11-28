@@ -27,3 +27,16 @@ $(window).scroll(function(event) {
         }
     });
 });
+
+// Smooth Scrolling for Menu
+
+//
+// Make the scrolling motion smooth.
+//
+
+$('.pure-menu-list li a').click(function(event) {
+    var target = $(this).attr('href');
+    var targetposition = $(target).offset().top;
+    event.preventDefault();
+    $('html,body').animate({scrollTop:targetposition+1},500);
+});
